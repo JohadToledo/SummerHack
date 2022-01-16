@@ -1,0 +1,65 @@
+.center{
+    text-align: center;
+}
+.cap{
+    text-transform: capitalize;
+}
+
+.image{
+        width: 200px;
+        height: 200px;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+.content{
+    background-color: chocolate;
+}
+span{
+    color:darkslategray;
+}
+
+.letra{
+    font-family: 'Coming Soon', cursive;
+    font-size: 20px;
+}
+.letra p:nth-child(1){
+    background-color: black;
+    color: white;
+}
+.letra p:nth-child(2){
+    background-color: chocolate;
+    color: black;
+}
+.letra p:nth-child(3){
+    background-color: black;
+    color: white;
+}
+.letra p:nth-child(4){
+    background-color: chocolate;
+    color: black;
+}
+.letra p:nth-child(5){
+    background-color: black;
+    color: white;
+}
+.letra p:nth-child(6){
+    background-color: chocolate;
+    color: black;
+}
+.letra p:nth-child(7){
+    background-color: black;
+    color: white;
+}
+.letra p:nth-child(8){
+    background-color: chocolate;
+    color: black;
+}
+
+
+
+footer{
+    color: gray;
+}
