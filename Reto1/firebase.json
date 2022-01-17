@@ -1,6 +1,11 @@
 {
   "hosting": {
+<<<<<<< HEAD
     "public": "./",
+=======
+    "site": "saynomore",
+    "public": "n",
+>>>>>>> 8ee4be8abe1d002215f1e763b0bdcae4917d1698
     "ignore": [
       "firebase.json",
       "**/.*",
