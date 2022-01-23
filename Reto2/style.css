@@ -1,0 +1,52 @@
+.body{
+    display: flex;
+}
+.splash{
+    margin:auto;
+    display: flex;
+    width: 80%;
+    height:90vh;
+    background: url('https://elplanteo.com/wp-content/uploads/2021/06/show2-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+.splash ul{
+    width: 200px;
+    height: 120px;
+
+}
+.logo{
+    margin: 20px;;
+    max-width: 95px;
+    max-height: 95px;
+    border-radius: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul li{
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: #fff;
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #866ace;
+}
+a:hover{
+    color: #ee7300;
+    text-decoration: none;
+    
+}
+
+a i{
+
+}
