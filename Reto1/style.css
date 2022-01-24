@@ -1,6 +1,9 @@
 .center{
     text-align: center;
 }
+body{
+    margin: 0px;
+}
 .cap{
     text-transform: capitalize;
 }
