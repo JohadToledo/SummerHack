@@ -34,7 +34,7 @@ div ul{
     height: 140px;
 }
 
-.splash .play{
+.splash .podcast{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ iframe{
     width: 25%; 
     height: 152px;
     color: #866ace;
-  }
+}
 
 .cards-podcast{
     margin:auto;
