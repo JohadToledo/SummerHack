@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 400px;
+  /* max-width: 1430px; */
   font-size: 14px;
   font-family: arial, sans-serif;
   color: #202124;
@@ -30,7 +31,6 @@ header a {
 
 .header-btn-left {
   height: 48px;
-  width: 137px;
   line-height: normal;
   font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
   z-index: 986;
@@ -46,12 +46,17 @@ header a {
   padding-right: 18px;
   padding-left: 15px;
 }
-.header-btn-right:first-child{
+.header-btn-right:first-child {
   padding-left: 4px;
-
 }
 .header-btn-right {
   display: flex;
+}
+
+.icon-puntitos {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='gb_Oe' focusable='false' fill='%23eee' viewBox='0 0 24 24'%3E%3Cpath d='M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .logo-9 {
@@ -66,4 +71,49 @@ header a {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+.splash {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 245px;
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+
+.troogle-img-cont {
+  max-height: 132px;
+  position: relative;
+  margin-top: auto;
+}
+
+.troogle-img-cont {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+
+.buscador {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 160px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  display: inline-flex;
+  width: 1473px;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
