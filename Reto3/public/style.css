@@ -8,67 +8,74 @@ body {
   font-family: arial, sans-serif;
   color: #202124;
 }
- 
+
 header {
   display: flex;
   align-items: center;
   height: 60px;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 header a {
   text-decoration: none;
   color: #202124;
 }
+.header-right {
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 26px;
+}
 
-.header-btn {
+.header-left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
- } 
+}
 
 .header-btn-left {
   font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
   display: flex;
-  margin-right: 27px;
+  margin-right: 19px;
   line-height: 24px;
 }
 
-.header-btn-left .btn-left a:link, .header-btn-left .btn-left a:visited{
-  /* text-decoration: underline; */
+.header-btn-left .btn-left a:link,
+.header-btn-left .btn-left a:visited {
   color: #202124;
 }
 
-.header-btn-left .btn-left a:hover, .header-btn-left .btn-left a:active{
+.header-btn-left .btn-left a:hover,
+.header-btn-left .btn-left a:active {
   text-decoration: underline;
   color: #202124;
 }
 
-.gmail{
+.gmail {
   margin-right: 15px;
 }
 
-.dots{
-    margin-right: 20px;
-    margin-bottom: 2px;
+.dots {
+  margin-right: 12px;
+  margin-bottom: 0px;
+  padding: 5px 8px 8px 8px;
 }
 
-.dots:hover{
-  background-color: rgba(60,64,67,0.08);
+.dots:hover {
+  background-color: rgba(60, 64, 67, 0.08);
   outline: none;
-  webkit-border-radius: 50%;
-  padding: 10px;
   border-radius: 50%;
 }
 
-.header-btn-right{
+.header-btn-right {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-right: 18px;
 }
-
 
 .icon-puntitos {
   width: 24px;
@@ -84,12 +91,38 @@ header a {
   fill: currentColor;
 }
 
-.perfil-img {
+/* .perfil-img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+} */
+.sign-in {
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
+.sign-in:hover {
+  background: #2b7de9;
+  -webkit-box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%),
+    0 1px 3px 1px rgb(66 133 244 / 15%);
+  box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%),
+    0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+.sign-in a {
+  color: #fff;
+}
 section {
   height: calc(100vh - 154px);
 }
@@ -126,11 +159,10 @@ section {
   height: 90px;
 }
 
-.form:hover{
-    background-color: #fff;
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-    border-color: rgba(223,225,229,0);
-
+.form:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .form {
@@ -172,7 +204,8 @@ section {
   font-size: 16px;
 }
 
-input:hover, input:focus-visible {
+input:hover,
+input:focus-visible {
   /* outline: -webkit-focus-ring-color auto 1px; */
   border: none;
   display: flex;
@@ -187,11 +220,11 @@ input:hover, input:focus-visible {
   margin-bottom: 16px;
 }
 
-.dos-btn div:hover{
+.dos-btn div:hover {
   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
 
 .dos-btn div {
@@ -220,7 +253,10 @@ input:hover, input:focus-visible {
   text-decoration: none;
   padding: 0 3px;
 }
-
+.ofrecido a:hover,
+.ofrecido a:active {
+  text-decoration: underline;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -252,25 +288,25 @@ footer a {
 .footer-bottom-left {
   display: flex;
   justify-content: space-between;
-  width: 483px;
+  width: 313px;
   flex-wrap: wrap;
   margin-left: 25px;
 }
 
-.footer-bottom a:link, .footer-bottom a:visited{
+.footer-bottom a:link,
+.footer-bottom a:visited {
   color: #70757a;
 }
 
-.footer-bottom a:hover, .footer-bottom a:active{
+.footer-bottom a:hover,
+.footer-bottom a:active {
   text-decoration: underline;
   color: #70757a;
 }
 
-
-
 .footer-bottom-rigth {
   margin-right: 25px;
-  width: 280px;
+  width: 204px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
