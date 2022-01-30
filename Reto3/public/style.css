@@ -8,7 +8,7 @@ body {
   font-family: arial, sans-serif;
   color: #202124;
 }
-
+ 
 header {
   display: flex;
   align-items: center;
@@ -20,31 +20,35 @@ header a {
   text-decoration: none;
   color: #202124;
 }
+
 .header-btn {
-  float: right;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
-}
+ } 
 
 .header-btn-left {
   font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
   display: flex;
-  align-items: center;
+  margin-right: 27px;
+  line-height: 24px;
 }
 
-.header-btn-left div {
-  padding-right: 19px;
+.gmail{
+  margin-right: 15px;
 }
 
-.header-btn-right div {
-  padding-right: 18px;
-  padding-left: 15px;
+.dots{
+  margin-right: 20px;
+    margin-bottom: 2px;
 }
-.header-btn-right:first-child {
-  padding-left: 4px;
-}
-.header-btn-right {
+
+.header-btn-right{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 18px;
 }
 
 .icon-puntitos {
