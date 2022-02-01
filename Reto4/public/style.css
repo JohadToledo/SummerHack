@@ -1,0 +1,77 @@
+body{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .2px;
+    color: silver;
+    margin: 0;
+    font-family: Avenir,sans-serif;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    width: 100vw;
+}
+nav a{
+    margin: 5px;
+}
+.sing-in{
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    margin-right: 48px;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid silver;
+    margin-top: 0px;
+}
+
+.sing-in span{
+    height: 52px;
+}
+
+.section-one{
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/f20434f2bb0788b570bde7f7189b0e2cfd1209a5a5d90f4e032acebc816c5076/original);
+    min-height: 100vh;
+    padding: 5.6vw;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: top;
+    background-size: 100%;
+}
+
+.content{
+    width: 50%;
+    z-index: 1;
+    align-items: center;
+}
+
+.content picture{
+    max-width: 400px;
+    display: block;
+}
+
+picture img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.content-list{
+    display: flex;
+    flex-wrap: wrap;
+}
