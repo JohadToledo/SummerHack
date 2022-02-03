@@ -95,6 +95,12 @@ picture img{
 }
 
 @media only screen and (min-width: 1025px){
+.picture-400 {
+    max-width: 400px;
+}
+}
+
+@media only screen and (min-width: 1025px){
 .content picture {
     margin-bottom: 2vw;
 }
