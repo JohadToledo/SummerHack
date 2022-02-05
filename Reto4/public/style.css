@@ -71,7 +71,6 @@ nav .pre a {
   color: #f9f9f9;
   background: #0063e5;
   border: none;
-  font-size: 18px;
   line-height: 18px;
   text-decoration: none;
   font-weight: 400;
@@ -194,22 +193,6 @@ nav .btn-secondary {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* .sing-in {
-  color: #f9f9f9;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 18px;
-  text-decoration: none;
-  border-radius: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 1px solid silver;
-  margin-top: 0px;
-  height: 50px;
-} */
-
 .sing-in a {
   margin-top: 5px;
 }
@@ -247,23 +230,26 @@ section picture {
   background-size: 100%;
 }
 
+.section-one .content{
+  box-sizing: border-box;
+}
+
 .content {
-  margin-bottom: 346px;
   width: 50%;
   z-index: 1;
   align-items: center;
   max-width: 640px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+@media only screen and (min-width: 1025px){
+.lg-text-center {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .content-one-pic img {
   width: 100%;
-}
-
-picture img {
-  height: auto;
 }
 
 .content ul {
@@ -275,12 +261,95 @@ picture img {
 }
 
 .content-list {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+
+@media only screen and (min-width: 1025px){
+.footnote {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+p {
+  margin: 0 0 24px;
+}
+
+.btn.link, a.link {
+  padding: 0;
+  color: #f9f9f9;
+  cursor: pointer;
+  background: 0 0;
+  border: none;
+  text-align: inherit;
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px){
+p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+.medium {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+.btn-primary.large, .btn-secondary.large {
+    padding: 20.5px 33px;
+    max-width: 700px;
+    height: 68px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+footer img, footer picture, header img, header picture, section img, section picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1025px){
+picture.lg-400 {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+.lg-text-center picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+.section-one picture {
+    margin-bottom: 2vw;
+  }
+}
+
+ul .content-list {
+  flex: 0 0 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
   max-width: 100%;
-  align-items: center;
 }
 
 .section-two {
