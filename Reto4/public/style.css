@@ -9,12 +9,17 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 nav {
   height: 70px;
   display: flex;
   align-items: center;
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
@@ -27,9 +32,13 @@ nav {
   pointer-events: none;
 }
 
-nav a {
-  margin: 5px;
+
+nav .sing-in {
+  max-width: none;
+  height: 40px;
+  width: auto;
 }
+
 nav .pre a {
   margin-right: 20px;
 }
@@ -43,6 +52,7 @@ nav .pre a {
   opacity: 1;
   pointer-events: none;
   justify-content: flex-end;
+  pointer-events: auto;
 }
 
 .post {
@@ -66,19 +76,19 @@ nav .pre a {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 1px;
-  max-width: 700px;
+  /* max-width: 185px; */
   height: 68px;
-  width: 100%;
+  /* width: 100%; */
 }
 
-.btn-primary .btn-secondary {
+.btn-primary,
+.btn-secondary {
   max-width: none;
   height: 40px;
   width: auto;
   margin-bottom: 20px;
   height: 50px;
   padding: 11.5px 24px;
-  width: 100%;
   max-width: 320px;
   cursor: pointer;
   border-radius: 4px;
@@ -97,18 +107,59 @@ nav .pre a {
   text-transform: uppercase;
 }
 
+nav a {
+  margin: 5px !important;
+}
+
 .btn-secondary {
   color: #f9f9f9;
   background-color: #040714;
   border: 1px solid silver;
 }
 
-@media only screen and (max-width: 769px) {
-  a.btn-secondary {
-    padding-left: 16px;
-    padding-right: 16px;
+.small {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 769px) {
+  .btn-primary,
+  .btn-secondary {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
+@media only screen and (min-width: 769px){
+  nav .btn-primary.small, nav .btn-secondary.small {
+    padding: 8px 14px;
+    padding-top: 8px;
+    padding-right: 14px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    max-width: 260px;
+    height: 50px;
+  }
+}
+
+
+
+@media only screen and (min-width: 769px){
+  nav .btn-primary, nav .btn-secondary{
+    max-width: 260px;
+    height: 50px;
+    text-transform: uppercase;
+    max-width: none !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+a.btn-secondary {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+
 
 a,
 a:focus,
@@ -116,10 +167,7 @@ a:hover {
   color: #f9f9f9;
 }
 
-.small {
-  font-size: 14px;
-  line-height: 24px;
-}
+
 
 nav .btn-primary *,
 nav .btn-secondary * {
@@ -146,11 +194,11 @@ nav .btn-secondary {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.sing-in {
+/* .sing-in {
   color: #f9f9f9;
   display: flex;
+  align-items: center;
   letter-spacing: 1px;
-  margin-right: 48px;
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
@@ -159,14 +207,16 @@ nav .btn-secondary {
   padding-right: 16px;
   border: 1px solid silver;
   margin-top: 0px;
+  height: 50px;
+} */
+
+.sing-in a {
+  margin-top: 5px;
 }
 
 .suscribe {
   display: flex;
-}
-
-.sing-in span {
-  height: 52px;
+  margin-right: 300px;
 }
 
 section {
@@ -414,181 +464,10 @@ footer {
   width: 18px;
 }
 
-@media only screen and (max-width: 769px) {
-  a.btn-primary *,
-  a.btn-secondary * {
-    margin-top: 3px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .btn-primary,
-  .btn-secondary {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .btn-primary,
-  .btn-secondary {
-    max-width: 260px;
-    height: 50px;
-    text-transform: uppercase;
-    max-width: none;
-  }
-}
-@media only screen and (max-width: 769px) {
-  nav a .btn-secondary {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .pre a {
-    max-width: 260px;
-    height: 50px;
-    text-transform: uppercase;
-    max-width: none;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .btn-primary,
-  .btn-secondary {
-    padding: 8px 14px;
-    max-width: 260px;
-    height: 50px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .btn-primary,
-  .btn-secondary {
-    margin-bottom: 20px;
-    height: 60px;
-    padding: 16.5px 24px;
-    max-width: 360px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .btn-primary,
-  .button.secondary.large,
-  a.primary.large,
-  a.secondary.large,
-  button.primary.large,
-  button.secondary.large {
-    padding: 20.5px 33px;
-    max-width: 700px;
-    height: 68px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .content-two-img {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .content-four-text {
-    left: 50%;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .content-four-text {
-    width: calc(50% - 5vw);
-    right: 5vw;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .content-four-text {
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-  .section-two-picture {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  h2 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  footer {
-    font-size: 12px;
-    line-height: 22px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  h3 {
-    font-size: 28px;
-    line-height: 38px;
-    color: #f9f9f9;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  body {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
 
 @media only screen and (max-width: 1025px) {
   .small {
     font-size: 16px;
     line-height: 26px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .content-two-text h2 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .picture-400 {
-    max-width: 400px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .content picture {
-    margin-bottom: 2vw;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .content h3 {
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: normal;
-    text-align: center;
-    color: #f9f9f9;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  picture.lg-180 {
-    max-width: 180px;
   }
 }
