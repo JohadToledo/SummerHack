@@ -61,6 +61,11 @@ nav .pre a {
   opacity: 0;
 }
 
+.btn-primary.small, .btn-secondary.small {
+  padding: 9px 12px;
+  max-width: 150px;
+}
+
 .btn-primary {
   padding: 20.5px 33px;
   cursor: pointer;
@@ -96,8 +101,6 @@ nav .pre a {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease 0s;
-  font-size: 15px;
-  line-height: 15px;
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 1px;
@@ -112,6 +115,110 @@ nav a {
   color: #f9f9f9;
   background-color: #040714;
   border: 1px solid silver;
+}
+
+a.btn-primary, a.btn-secondary {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media only screen and (max-width: 768px){
+.section-one.sm-align-center {
+    justify-content: center;
+}
+}
+
+.section-one {
+  position: relative;
+  min-height: 100vh;
+  padding: 5.6vw;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+.section-one {
+    min-height: 70vh;
+    padding: 40vw 5vw 20vw;
+}
+}
+
+@media only screen and (max-width: 768px){
+.section-one .content {
+    max-width: 500px;
+    width: 100%;
+    max-width: 500px;
+}
+}
+
+@media only screen and (max-width: 768px){
+.sm-text-center {
+    align-items: center;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 768px){
+.sm-text-center picture {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media only screen and (max-width: 768px){
+picture.sm-180 {
+    max-width: 180px;
+}
+}
+
+@media only screen and (max-width: 768px){
+.section-one picture {
+    margin-bottom: 3vw;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+  font-family: "Avenir", sans-serif;
+
+}
+}
+
+ h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-family: "Avenir", sans-serif;
+
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  letter-spacing: normal;
+}
+
+a.btn-primary, a.btn-secondary {
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 11.5px 24px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.btn-primary.large, .btn-secondary.large {
+  padding: 11.5px 24px;
+  max-width: 540px;
+}
+
+
+nav a.btn-primary, nav a.btn-secondary{
+  max-width: none !important;
+  height: 40px;
+  width: auto;
+}
+
+nav a.btn-secondary {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
 }
 
 .small {
@@ -136,6 +243,14 @@ nav a {
     max-width: 260px;
     height: 50px;
   }
+}
+
+
+
+@media only screen and (max-width: 768px){
+nav {
+    padding: 0 12px 0 20px;
+}
 }
 
 
@@ -215,11 +330,8 @@ section picture {
   width: 100%;
   height: auto;
 }
-.section-one {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+
+
 
 .section-one .background {
   display: none;
@@ -233,6 +345,13 @@ section picture {
   pointer-events: none;
 }
 
+@media only screen and (max-width: 768px){
+.section-one .background.sm {
+    display: block;
+    background-position: top;
+    background-size: 100%;
+}
+}
 
 @media only screen and (min-width: 1025px){
   .section-one .background.lg {
@@ -316,6 +435,11 @@ p {
     margin-bottom: 20px;
   }
 }
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  p {
+      margin-bottom: 20px;
+}
+}
 
 @media only screen and (min-width: 1025px){
 .medium {
@@ -375,11 +499,6 @@ ul .content-list {
   height: 100vh;
 }
 
-.picture-img {
-  width: 100%;
-  height: 100%;
-}
-
 .content-two {
   display: flex;
   align-items: center;
@@ -411,6 +530,50 @@ ul .content-list {
   vertical-align: inherit;
 }
 
+@media only screen and (max-width: 768px){
+  .section-two, .section-three {
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 768px){
+  section {
+      padding: 10vw 5vw;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section-two .picture-img, .section-three picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .section-two img {
+      margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section-two .content-two-text {
+      text-align: center;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  h2, h3, h4, h5, h6 {
+     margin-bottom: 16px;
+}
+}
+
+h1, h2 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+
+/* sectin number three */
 .section-three {
   display: flex;
   align-items: center;
@@ -475,6 +638,16 @@ a.btn-primary, a.btn-secondary{
   font-family: "Avenir", sans-serif;
 
 }
+
+@media only screen and (max-width: 768px){
+  .section-three .content-three-text{
+      text-align: center;
+  }
+}
+
+
+
+/* section number four */
 
 .content-four {
   display: flex;
@@ -585,6 +758,8 @@ footer picture, header picture, main picture {
 
 .medium {
   font-family: "Avenir", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 h1,
@@ -695,10 +870,6 @@ footer .footer-links {
   display: inline-block;
   margin-bottom: 0;
   white-space: nowrap;
-}
-
-.footer-copyright {
-  text-align: center;
 }
 
 .language-selector {
