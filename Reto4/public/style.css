@@ -177,14 +177,6 @@ picture.sm-180 {
 }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px){
-h2, h3, h4, h5, h6 {
-    margin-bottom: 16px;
-  font-family: "Avenir", sans-serif;
-
-}
-}
-
  h3 {
   font-size: 22px;
   line-height: 32px;
@@ -217,8 +209,8 @@ nav a.btn-primary, nav a.btn-secondary{
 }
 
 nav a.btn-secondary {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .small {
@@ -246,7 +238,12 @@ nav a.btn-secondary {
 }
 
 
-
+@media only screen and (min-width: 769px){
+nav a.btn-secondary {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+}
 @media only screen and (max-width: 768px){
 nav {
     padding: 0 12px 0 20px;
@@ -315,6 +312,12 @@ nav .btn-secondary {
   margin-right: 300px;
 }
 
+@media only screen and (min-width: 768px){
+  section {
+      padding: 10vw 5vw;
+  }
+}
+
 section {
   position: relative;
   box-sizing: border-box;
@@ -345,13 +348,6 @@ section picture {
   pointer-events: none;
 }
 
-@media only screen and (max-width: 768px){
-.section-one .background.sm {
-    display: block;
-    background-position: top;
-    background-size: 100%;
-}
-}
 
 @media only screen and (min-width: 1025px){
   .section-one .background.lg {
@@ -359,6 +355,34 @@ section picture {
     background-position: 50%;
     background-size: cover;
   }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+.section-one .background.md {
+    display: block;
+    background-position: top;
+    background-size: 100%;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .section-one {
+      min-height: 70vh;
+      padding: 40vw 5vw 10vw;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+.section-one {
+    justify-content: center;
+}
+}
+
+@media only screen and (max-width: 768px){
+.section-one .background.sm {
+    display: block;
+    background-position: top;
+    background-size: 100%;
+}
 }
 
 .section-one .background.lg {
@@ -441,13 +465,6 @@ p {
 }
 }
 
-@media only screen and (min-width: 1025px){
-.medium {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
 @media only screen and (min-width: 769px){
 .btn-primary.large, .btn-secondary.large {
     padding: 20.5px 33px;
@@ -496,7 +513,6 @@ ul .content-list {
   display: flex;
   align-items: center;
   background-color: #040714;
-  height: 100vh;
 }
 
 .content-two {
@@ -517,6 +533,20 @@ ul .content-list {
   font-family: "Avenir", sans-serif;
 }
 
+@media only screen and (min-width: 769px){
+  .section-four .content-four-img  {
+    position: relative;
+}
+}
+
+@media only screen and (min-width: 769px){
+  .side-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+
 .content-two-text {
   box-sizing: border-box;
   padding: 0 2vw;
@@ -536,35 +566,21 @@ ul .content-list {
 }
 }
 
-@media only screen and (max-width: 768px){
-  section {
-      padding: 10vw 5vw;
-  }
-}
+
+
+
 
 @media only screen and (max-width: 768px){
-  .section-two .picture-img, .section-three picture {
+  .section-two .picture-img, .section-three picture, .section-four picture, .btn-primary{
   margin-left: auto;
   margin-right: auto;
 }
 }
 
 @media only screen and (max-width: 768px){
-  .section-two img {
+  .section-two img, .section-three .picture-img, .section-four picture img{
       margin-bottom: 20px;
   }
-}
-
-@media only screen and (max-width: 768px){
-  .section-two .content-two-text {
-      text-align: center;
-}
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px){
-  h2, h3, h4, h5, h6 {
-     margin-bottom: 16px;
-}
 }
 
 h1, h2 {
@@ -572,11 +588,25 @@ h1, h2 {
   line-height: 36px;
 }
 
+@media only screen and (max-width: 768px){
+  .section-four picture img{
+    display: block;
+  }
+}
 
 /* sectin number three */
 .section-three {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width:768px){
+  .section-three {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .content-three {
@@ -595,12 +625,7 @@ h1, h2 {
   padding: 0 2vw;
 }
 
-@media only screen and (min-width: 769px){
-  .content-three-text {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-}
+
 
 .content-three-text .btn-primary {
   font-family: "Avenir", sans-serif;
@@ -609,6 +634,17 @@ h1, h2 {
     padding: 16.5px 24px;
     max-width: 360px;
     width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+  .content-three-text .btn-primary {
+    font-family: "Avenir", sans-serif;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 11.5px 24px;
+    width: 100%;
+    max-width: 320px;
+}
 }
 
 .content-three-text .btn-primary span{
@@ -640,7 +676,7 @@ a.btn-primary, a.btn-secondary{
 }
 
 @media only screen and (max-width: 768px){
-  .section-three .content-three-text{
+  .section-two .content-two-text, .section-three .content-three-text, .section-four .content-four-text{
       text-align: center;
   }
 }
@@ -684,11 +720,28 @@ a.btn-primary, a.btn-secondary{
 }
 }
 
-.section-five h2{
-  font-family: "Avenir", sans-serif;
-  margin-bottom: 28px;
+.section-four picture .picture-img-mobi{
+  display: none;
 }
 
+@media only screen and (max-width: 768px){
+  .section-four picture .picture-img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section-four picture .picture-img-mobi{
+    display: block;
+  }
+}
+
+
+
+/* Section Number Five */
+.section-five h2{
+  font-family: "Avenir", sans-serif;
+}
 .pe{
   margin-bottom: 24px;
 }
@@ -705,6 +758,10 @@ h2 {
   }
 }
 
+.middle {
+  justify-content: center;
+}
+
 .content-five-list {
   display: flex;
   flex-wrap: wrap;
@@ -712,6 +769,8 @@ h2 {
   justify-content: space-around;
   margin: 0 -12px;
 }
+
+
 
 .content-five-item {
   box-sizing: border-box;
@@ -733,6 +792,14 @@ footer img, footer picture, header img, header picture, section img, section pic
 .content-five-item{
   flex: 0 0 25%;
   max-width: 25%;
+}
+
+@media only screen and (max-width: 768px){
+  .content-five-item {
+   flex: 0 0 50%;
+   max-width: 50%;
+
+}
 }
 
 .device {
@@ -762,6 +829,14 @@ footer picture, header picture, main picture {
   line-height: 25px;
 }
 
+
+@media only screen and (min-width: 1025px){
+  .medium {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
 h1,
 h2,
 h3 {
@@ -783,8 +858,16 @@ h6 {
 @media only screen and (min-width: 1921px){
 h2, h3, h4, h5, h6 {
     margin-bottom: 28px;
+    font-family: "Avenir", sans-serif;
 }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  h2, h3, h4, h5, h6 {
+      margin-bottom: 16px;
+    font-family: "Avenir", sans-serif;
+  }
+  }
 
 footer {
   background-color: #040714;
@@ -852,6 +935,12 @@ footer .footer-links {
     font-size: 12px;
     line-height: 22px;
 }
+}
+
+@media only screen and (max-width: 768px), only screen and (min-width: 769px) and (max-width: 1024px){
+  footer {
+      padding: 5vw;
+  }
 }
 
 .link, a.link{
